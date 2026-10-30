@@ -1,0 +1,150 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #101827;
+    color: white;
+}
+
+.app {
+    max-width: 800px;
+    margin: auto;
+    padding: 25px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    color: #60a5fa;
+    font-size: 34px;
+}
+
+.header span {
+    color: #cbd5e1;
+}
+
+.card {
+    background: #1e293b;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 8px 30px #0005;
+}
+
+.card h2 {
+    margin-top: 10px;
+}
+
+input:not([type="checkbox"]) {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #475569;
+    background: #0f172a;
+    color: white;
+}
+
+.category {
+    display: flex;
+    gap: 10px;
+    padding: 9px 0;
+    color: #cbd5e1;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 12px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+button:disabled {
+    background: #64748b;
+    cursor: not-allowed;
+}
+
+.room-code {
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    text-align: center;
+    color: #facc15;
+    padding: 20px;
+}
+
+.player {
+    padding: 12px;
+    background: #334155;
+    margin: 8px 0;
+    border-radius: 8px;
+}
+
+.timer {
+    font-size: 28px;
+    color: #facc15;
+    text-align: center;
+    margin: 20px;
+}
+
+.category-title {
+    color: #93c5fd;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.options button {
+    background: #334155;
+    text-align: left;
+}
+
+.options button.selected {
+    background: #7c3aed;
+}
+
+.error {
+    padding: 12px;
+    margin-bottom: 15px;
+    background: #991b1b;
+    border-radius: 8px;
+}
+
+.notice {
+    padding: 12px;
+    margin-bottom: 15px;
+    background: #166534;
+    border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+    .app {
+        padding: 12px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .options {
+        grid-template-columns: 1fr;
+    }
+}
